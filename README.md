@@ -7,7 +7,9 @@ of dictionaries
 `products` and returns list of names of products that are out 
 of date (expiration
 date < today date). 
-For example today is 2 February 2022.
+
+For example: `datetime.date.today()` for
+2 February 2022.
 ```python
 print(outdated_products([
     {
