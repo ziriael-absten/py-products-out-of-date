@@ -2,11 +2,10 @@
 
 - Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before start
 
-Write tests for `outdated_products` function, that takes list 
+Inside `app/test_main.py`, write tests for `outdated_products` function, that takes list 
 of dictionaries
 `products` and returns list of names of products that are out 
-of date (expiration
-date < today date). 
+of date (expiration date < today date). 
 
 For example: `datetime.date.today()` for
 2 February 2022.
@@ -31,3 +30,7 @@ print(outdated_products([
 # ['duck']
 ```
 Mock the `datetime.date.today()` to check different variants.
+
+Run `pytest app/` to check if function pass your tests. 
+
+Run `pytest --numprocesses=auto tests/` to check if your tests cover all boundary conditions and pass task tests.
